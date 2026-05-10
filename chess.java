@@ -65,6 +65,9 @@ public class chess {
                 Timers();
             } else {
                 System.out.println("cant find music file noooooooooo");
+                icon = ImageIO.read(new File("Chess_Icon.png"));
+                SwingUtilities.invokeLater(() -> window());//remember future aarush for using indenter, fix arrow used to resolve errors after indenter used
+                Timers();
             }
         } catch (Exception e) {
             e.printStackTrace();
